@@ -1376,6 +1376,9 @@ case $os in
 	chorusos*)
 		os=chorusos
 		;;
+	helenos*)
+		os=helenos
+		;;
 	isc)
 		os=isc2.2
 		;;
