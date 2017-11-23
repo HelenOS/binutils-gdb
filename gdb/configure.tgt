@@ -102,7 +102,7 @@ esac
 # 3. Get the rest of objects.
 
 case "${targ}" in
-aarch64*-*-elf | aarch64*-*-rtems*)
+aarch64*-*-elf | aarch64*-*-rtems* | aarch64*-*-helenos*)
 	# Target: AArch64 embedded system
 	gdb_target_obs="aarch64-newlib-tdep.o"
 	;;
@@ -736,7 +736,7 @@ x86_64-*-openbsd*)
 			i386-bsd-tdep.o i386-obsd-tdep.o \
 			bsd-uthread.o"
 	;;
-x86_64-*-rtems*)
+x86_64-*-rtems* | x86_64-*-helenos*)
 	gdb_target_obs="${amd64_tobjs} ${i386_tobjs} i386-bsd-tdep.o"
 	;;
 xtensa*-*-linux*)	gdb_target=linux
