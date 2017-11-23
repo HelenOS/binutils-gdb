@@ -1380,6 +1380,7 @@ case $os in
 	      | -sym* | -kopensolaris* | -plan9* \
 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
 	      | -aos* | -aros* | -cloudabi* | -sortix* \
+	      | -helenos* \
 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
 	      | -hiux* | -knetbsd* | -mirbsd* | -netbsd* \
