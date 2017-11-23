@@ -1363,7 +1363,7 @@ case $os in
 	     | bosx* | nextstep* | cxux* | aout* | elf* | oabi* \
 	     | ptx* | coff* | ecoff* | winnt* | domain* | vsta* \
 	     | udi* | eabi* | lites* | ieee* | go32* | aux* | hcos* \
-	     | chorusrdb* | cegcc* | glidix* \
+	     | chorusrdb* | cegcc* | glidix* | helenos* \
 	     | cygwin* | msys* | pe* | moss* | proelf* | rtems* \
 	     | midipix* | mingw32* | mingw64* | linux-gnu* | linux-android* \
 	     | linux-newlib* | linux-musl* | linux-uclibc* \
