@@ -241,14 +241,15 @@ arm*-*-uclinux*)	targ_emul=armelf_linux
 			targ_extra_emuls="armelf armelfb armelfb_linux"
 			targ_extra_libpath="armelfb_linux"
 			;;
-<<<<<<< HEAD
 arm-*-vxworks)		targ_emul=armelf_vxworks
 			;;
 arm*-*-conix*)		targ_emul=armelf
 			;;
-arm*-*-helenos* | \
 arm*-*-fuchsia*)	targ_emul=armelf_fuchsia
 			targ_extra_emuls="armelfb_fuchsia armelf armelfb"
+			;;
+arm*-*-helenos*)	targ_emul=armelf_hosted
+			targ_extra_emuls="armelf"
 			;;
 arm*-*-haiku*)		targ_emul=armelf_haiku
 			targ_extra_emuls=armelf

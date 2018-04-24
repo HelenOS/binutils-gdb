@@ -669,7 +669,7 @@ ALL_EMULATION_SOURCES = \
 	earmelf_fbsd.c \
 	earmelf_fuchsia.c \
 	earmelf_haiku.c \
-	earmelf_helenos.c \
+	earmelf_hosted.c \
 	earmelf_linux.c \
 	earmelf_linux_eabi.c \
 	earmelf_linux_fdpiceabi.c \
@@ -1285,7 +1285,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_fbsd.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_fuchsia.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_haiku.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_helenos.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_hosted.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux_eabi.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux_fdpiceabi.Po@am__quote@
