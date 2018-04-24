@@ -173,7 +173,7 @@ ALL_EMULATION_SOURCES = \
 	earmelf.c \
 	earmelf_fbsd.c \
 	earmelf_fuchsia.c \
-	earmelf_helenos.c \
+	earmelf_hosted.c \
 	earmelf_linux.c \
 	earmelf_linux_eabi.c \
 	earmelf_nacl.c \
@@ -716,7 +716,7 @@ earmelf_fuchsia.c: $(srcdir)/emulparams/armelf_fuchsia.sh \
   $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
   $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
 
-earmelf_helenos.c: $(srcdir)/emulparams/armelf_helenos.sh \
+earmelf_hosted.c: $(srcdir)/emulparams/armelf_hosted.sh \
   $(srcdir)/emulparams/armelf.sh \
   $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
   $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
