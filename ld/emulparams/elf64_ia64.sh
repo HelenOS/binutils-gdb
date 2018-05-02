@@ -13,8 +13,7 @@ if test "0" = "1" -a -n "$CREATE_SHLIB"; then
   # Optimize shared libraries for 16K page size
   COMMONPAGESIZE="CONSTANT (COMMONPAGESIZE)"
 fi
-TEXT_START_ADDR="0x4000000000000000"
-DATA_ADDR="0x6000000000000000 + (. & (${MAXPAGESIZE} - 1))"
+TEXT_START_ADDR="0x2000000000000000"
 GENERATE_SHLIB_SCRIPT=yes
 GENERATE_PIE_SCRIPT=yes
 NOP=0x00300000010070000002000001000400  # a bundle full of nops
@@ -33,7 +32,3 @@ test -n "$CREATE_PIE" && OTHER_GOT_RELOC_SECTIONS="
 OTHER_READONLY_SECTIONS="${OTHER_READONLY_SECTIONS}
   .IA_64.unwind_info ${RELOCATING-0} : { *(.IA_64.unwind_info${RELOCATING+* .gnu.linkonce.ia64unwi.*}) }
   .IA_64.unwind ${RELOCATING-0} : { *(.IA_64.unwind${RELOCATING+* .gnu.linkonce.ia64unw.*}) }"
-# Intel C++ compiler, prior to 9.0, puts small data in .ctors and
-# .dtors.  They have to be next to .sbss/.sbss2/.sdata/.sdata2.
-SMALL_DATA_CTOR=" "
-SMALL_DATA_DTOR=" "
