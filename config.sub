@@ -2014,6 +2014,7 @@ case $os in
 	| go32* \
 	| haiku* \
 	| hcos* \
+	| helenos* \
 	| hiux* \
 	| hms* \
 	| hpux* \
