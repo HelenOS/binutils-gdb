@@ -148,6 +148,7 @@ case ${generic_target} in
   arm-*-phoenix*)			fmt=elf ;;
   arm-*-elf)				fmt=elf ;;
   arm-*-eabi* | arm-*-rtems* | arm-*-genode*)	fmt=elf em=armeabi ;;
+  arm-*-helenos*)			fmt=elf em=armeabi ;;
   arm-*-kaos*)				fmt=elf ;;
   arm-*-conix*)				fmt=elf ;;
   arm-*-freebsd[89].* | armeb-*-freebsd[89].*)
@@ -320,6 +321,7 @@ case ${generic_target} in
 					fmt=elf em=tmips ;;
   mips-*-haiku*)			fmt=elf em=haiku ;;
   mips-*-elf*)				fmt=elf ;;
+  mips-*-helenos*)			fmt=elf em=tmips ;;
   mips-*-netbsd*)			fmt=elf em=tmips ;;
   mips-*-openbsd*)			fmt=elf em=tmips ;;
   mips-*-windiss)			fmt=elf ;;
@@ -441,6 +443,7 @@ case ${generic_target} in
   *-*-xray | *-*-hms)			fmt=coff ;;
   *-*-sim)				fmt=coff ;;
   *-*-elf | *-*-rtems* | *-*-sysv4*)	fmt=elf ;;
+  *-*-helenos*)				fmt=elf ;;
   *-*-solaris*)				fmt=elf em=solaris ;;
   *-*-aros*)				fmt=elf em=linux ;;
   *-*-vxworks* | *-*-windiss)		fmt=elf em=vxworks ;;
