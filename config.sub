@@ -1752,7 +1752,7 @@ case $os in
 	     | bosx* | nextstep* | cxux* | oabi* \
 	     | ptx* | ecoff* | winnt* | domain* | vsta* \
 	     | udi* | lites* | ieee* | go32* | aux* | hcos* \
-	     | chorusrdb* | cegcc* | glidix* | serenity* \
+	     | chorusrdb* | cegcc* | glidix* | serenity* | helenos* \
 	     | cygwin* | msys* | moss* | proelf* | rtems* \
 	     | midipix* | mingw32* | mingw64* | mint* \
 	     | uxpv* | beos* | mpeix* | udk* | moxiebox* \
