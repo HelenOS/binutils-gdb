@@ -168,7 +168,6 @@ ALL_EMULATION_SOURCES = \
 	earmelf_fbsd.c \
 	earmelf_fuchsia.c \
 	earmelf_haiku.c \
-	earmelf_hosted.c \
 	earmelf_linux.c \
 	earmelf_linux_eabi.c \
 	earmelf_linux_fdpiceabi.c \
@@ -385,7 +384,6 @@ ALL_64_EMULATION_SOURCES = \
 	eaarch64fbsd.c \
 	eaarch64fbsdb.c \
 	eaarch64haiku.c \
-	eaarch64helenos.c \
 	eaarch64linux.c \
 	eaarch64linux32.c \
 	eaarch64linux32b.c \
@@ -665,7 +663,6 @@ $(ALL_EMULATION_SOURCES) $(ALL_64_EMULATION_SOURCES): $(GEN_DEPENDS)
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_fbsd.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_fuchsia.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_haiku.Pc@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_helenos.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux_eabi.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/earmelf_linux_fdpiceabi.Pc@am__quote@
@@ -879,7 +876,6 @@ $(ALL_EMULATION_SOURCES) $(ALL_64_EMULATION_SOURCES): $(GEN_DEPENDS)
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64fbsd.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64fbsdb.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64haiku.Pc@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64helenos.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64linux.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64linux32.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eaarch64linux32b.Pc@am__quote@

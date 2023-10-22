@@ -88,13 +88,10 @@ aarch64-*-elf | aarch64-*-rtems* | aarch64-*-genode*)
 			targ_emul=aarch64elf
 			targ_extra_emuls="aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb"
 			;;
-aarch64-*-helenos*)
-			targ_emul=aarch64helenos
-			targ_extra_emuls="aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb"
-			;;
 aarch64-*-cloudabi*)	targ_emul=aarch64cloudabi
 			targ_extra_emuls=aarch64cloudabib
 			;;
+aarch64-*-helenos* | \
 aarch64-*-freebsd*)	targ_emul=aarch64fbsd
 			targ_extra_emuls="aarch64fbsdb aarch64elf"
 			;;
@@ -204,6 +201,7 @@ arm-*-kaos*)		targ_emul=armelf
 			;;
 arm9e-*-elf)		targ_emul=armelf
 			;;
+arm*b-*-helenos* | \
 arm*b-*-linux-*eabi*)	targ_emul=armelfb_linux_eabi
 			targ_extra_emuls=armelf_linux_eabi
 			targ_extra_libpath=$targ_extra_emuls
@@ -212,6 +210,7 @@ arm*b-*-linux-*)	targ_emul=armelfb_linux
 			targ_extra_emuls="armelfb armelf armelf_linux"
 			targ_extra_libpath="armelf_linux"
 			;;
+arm*-*-helenos* | \
 arm*-*-linux-*eabi*)	targ_emul=armelf_linux_eabi
 			targ_extra_emuls="armelfb_linux_eabi"
 			targ_extra_libpath=$targ_extra_emuls
@@ -247,9 +246,6 @@ arm*-*-conix*)		targ_emul=armelf
 			;;
 arm*-*-fuchsia*)	targ_emul=armelf_fuchsia
 			targ_extra_emuls="armelfb_fuchsia armelf armelfb"
-			;;
-arm*-*-helenos*)	targ_emul=armelf_hosted
-			targ_extra_emuls="armelf"
 			;;
 arm*-*-haiku*)		targ_emul=armelf_haiku
 			targ_extra_emuls=armelf
