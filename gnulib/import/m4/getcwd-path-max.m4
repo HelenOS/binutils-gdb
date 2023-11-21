@@ -196,6 +196,15 @@ main ()
 
     /* Try rmdir first, in case the chdir failed.  */
     rmdir (DIR_NAME);
+    /* Getting rid of the very bottom dirs inside a Docker container is tricky */
+    if (chdir ("../../..") < 0) exit (errno);
+    rename (DIR_NAME"/"DIR_NAME"/"DIR_NAME, "b");
+    rename (DIR_NAME"/"DIR_NAME, "c");
+    rename (DIR_NAME, "d");
+    rmdir ("b");
+    rmdir ("c");
+    rmdir ("d");
+    /* Now for the rest */
     for (i = 0; i <= n_chdirs; i++)
       {
         if (chdir ("..") < 0)
