@@ -205,7 +205,7 @@ main ()
     rmdir ("c");
     rmdir ("d");
     /* Now for the rest */
-    for (i = 0; i <= n_chdirs - 4; i++)
+    for (i = 0; i <= n_chdirs; i++)
       {
         if (chdir ("..") < 0)
           break;
