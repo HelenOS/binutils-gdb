@@ -2106,6 +2106,7 @@ case $os in
 	| serenity* \
 	| sim* \
 	| skyos* \
+	| helenos* \
 	| solaris* \
 	| solidbsd* \
 	| sortix* \
